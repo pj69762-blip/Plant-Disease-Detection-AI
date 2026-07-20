@@ -66,3 +66,38 @@ http://127.0.0.1:5000
 ## 👩‍💻 Developed By
 
 Priyal Jain
+# 📸 Screenshots
+
+## 🏠 Home Page
+
+![Home Page](screenshots/home.png)
+
+---
+
+## 📤 Upload Image
+
+![Upload](screenshots/upload.png)
+
+---
+
+## 🤖 Prediction Result
+
+![Prediction](screenshots/prediction.png)
+
+---
+
+## 🌱 Disease Information
+
+![Diseases](screenshots/diseases.png)
+
+---
+
+## 📋 Prediction History
+
+![History](screenshots/history.png)
+
+---
+
+## 📊 Analytics Dashboard
+
+![Analytics](screenshots/analytics.png)
