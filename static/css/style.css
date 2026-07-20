@@ -815,3 +815,65 @@ a:hover{
 .dark-mode button{
     color:rgb(187, 10, 10) !important;
 }
+.footer{
+    background:#2e7d32;
+    color:rgb(160, 25, 25);
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    font-size:18px;
+}
+
+.footer strong{
+    color:#540334;
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    nav div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    input[type="file"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

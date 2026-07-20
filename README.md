@@ -2,6 +2,15 @@
 
 An AI-powered web application that detects plant diseases from leaf images using Deep Learning.
 
+![Python](https://img.shields.io/badge/Python-3.14-blue?logo=python)
+![Flask](https://img.shields.io/badge/Flask-Web_App-black?logo=flask)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep_Learning-orange?logo=tensorflow)
+![Keras](https://img.shields.io/badge/Keras-Neural_Network-red?logo=keras)
+![HTML](https://img.shields.io/badge/HTML5-Markup-orange?logo=html5)
+![CSS](https://img.shields.io/badge/CSS3-Styling-blue?logo=css3)
+![JavaScript](https://img.shields.io/badge/JavaScript-Frontend-yellow?logo=javascript)
+![SQLite](https://img.shields.io/badge/SQLite-Database-blue?logo=sqlite)
+
 ## 🚀 Features
 
 - 🌱 Plant Disease Detection
@@ -96,3 +105,9 @@ Priyal Jain
 ### 📊 Analytics Dashboard
 
 ![Analytics](screenshots/analytics.png)
+
+## 👩‍💻 Author
+
+**Priyal Jain**
+
+GitHub: https://github.com/pj69762-blip
