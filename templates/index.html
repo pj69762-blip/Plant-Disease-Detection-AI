@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Detection</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <nav>
+    <h2>🌿 PlantCare AI</h2>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="/diseases">Diseases</a>
+          <a href="/history">History</a>
+          <a href="/analytics">Analytics</a>
+            <button id="darkModeBtn" onclick="toggleDarkMode()">
+        🌙 Dark Mode
+    </button>
+    </div>
+</nav>
+
+<section class="hero">
+
+<h1>🌿 Plant Disease Detection AI</h1>
+
+<p>
+Detect plant diseases using Artificial Intelligence.
+Upload a leaf image and get disease prediction,
+confidence score and treatment suggestions.
+</p>
+
+</section>
+<div class="container" id="home">
+
+    <h1>🌿 Plant Disease Detection System</h1>
+
+    <form
+    action="/predict"
+    method="POST"
+    enctype="multipart/form-data"
+    onsubmit="showLoader()">
+
+        <input
+    type="file"
+    name="image"
+    id="imageInput"
+    accept="image/*"
+    onchange="previewImage(event)"
+    required>
+
+<br><br>
+
+<img
+    id="preview"
+    src="#"
+    alt="Image Preview"
+    style="display:none; max-width:300px; border-radius:15px;">
+        <br><br>
+        <br>
+
+<a href="/download-report">
+    <button>📄 Download PDF Report</button>
+</a>
+
+        <button type="submit">
+            Predict Disease
+        </button>
+
+    </form>
+    </form>
+
+    <div id="loader" style="display:none;">
+
+    <div class="spinner"></div>
+
+    <h3>🔍 AI is analyzing your leaf...</h3>
+
+    <p>Please wait a few seconds.</p>
+
+</div>
+
+    {% if image_path %}
+
+    <h2>Uploaded Image</h2>
+
+    <img src="{{ image_path }}" width="300">
+
+    {% endif %}
+
+    {% if prediction %}
+
+<div class="result-card">
+
+<h2>🌱 Prediction Result</h2>
+
+<h3>Disease:</h3>
+<p>{{ prediction }}</p>
+
+<h3>Accuracy:</h3>
+<p>{{ confidence }}%</p>
+
+<h3>💊 Treatment:</h3>
+<p>{{ treatment }}</p>
+
+<h3>🔍 Symptoms:</h3>
+<p>{{ symptoms }}</p>
+
+<h3>🛡 Prevention:</h3>
+<p>{{ prevention }}</p>
+
+</div>
+
+{% endif %}
+
+</div>
+
+
+<section id="about">
+
+<h2>About Plant Disease Detection</h2>
+
+<p>
+This AI-based system detects plant diseases using deep learning.
+Users can upload a leaf image and get the predicted disease,
+confidence score, and recommended treatment.
+</p>
+
+</section>
+
+
+<section id="features">
+
+<h2>Features</h2>
+
+<p>🌱 AI Based Plant Disease Detection</p>
+
+<p>📷 Leaf Image Analysis</p>
+
+<p>📊 Prediction Confidence Score</p>
+
+<p>💊 Disease Treatment Recommendation</p>
+
+</section>
+<footer>
+
+<p>🌿 PlantCare AI © 2026 | Developed using Python, Flask & Deep Learning</p>
+
+</footer>
+
+<script>
+
+
+function previewImage(event){
+
+    const preview = document.getElementById("preview");
+
+    preview.src = URL.createObjectURL(event.target.files[0]);
+
+    preview.style.display = "block";
+}
+
+function toggleDarkMode(){
+
+    document.body.classList.toggle("dark-mode");
+
+}
+
+</script>
+
+}
+
+function showLoader(){
+
+    document.getElementById("loader").style.display="block";
+
+}
+
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction History</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <h2>🌿 PlantCare AI</h2>
+
+    <div>
+        <a href="/">Home</a>
+        <a href="/diseases">Diseases</a>
+        <a href="/history">History</a>
+        <a href="/analytics">Analytics</a>
+         <button id="darkModeBtn" onclick="toggleDarkMode()">
+        🌙 Dark Mode
+    </button>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h1>📋 Prediction History</h1>
+
+    {% if records %}
+
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>Image</th>
+            <th>Disease</th>
+            <th>Confidence</th>
+            <th>Date</th>
+        </tr>
+
+        {% for row in records %}
+
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+    {% else %}
+
+    <h3>No prediction history available.</h3>
+
+    {% endif %}
+
+</div>
+<footer>
+
+<p>🌿 PlantCare AI © 2026 | Developed using Python, Flask & Deep Learning</p>
+
+</footer>
+</body>
+</html>

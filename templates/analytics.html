@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <h2>🌿 PlantCare AI</h2>
+
+    <div>
+        <a href="/">Home</a>
+        <a href="/diseases">Diseases</a>
+        <a href="/history">History</a>
+        <a href="/analytics">Analytics</a>
+         <button id="darkModeBtn" onclick="toggleDarkMode()">
+        🌙 Dark Mode
+    </button>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h1>📊 Analytics Dashboard</h1>
+
+    {% if diseases|default([])|length > 0 %}
+
+    <canvas id="chart"></canvas>
+
+    {% else %}
+
+    <h2>No Prediction Data Found</h2>
+
+    <p>Please upload some plant images first.</p>
+
+    {% endif %}
+
+</div>
+
+{% if diseases|default([])|length > 0 %}
+
+<script>
+const diseases = {{ diseases|default([])|tojson }};
+const counts = {{ counts|default([])|tojson }};
+
+const ctx = document.getElementById("chart").getContext("2d");
+
+new Chart(ctx, {
+    type: "bar",
+    data: {
+        labels: diseases,
+        datasets: [{
+            label: "Number of Predictions",
+            data: counts
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                display: true
+            }
+        }
+    }
+});
+</script>
+
+{% endif %}
+
+<footer>
+    <p>🌿 PlantCare AI © 2026 | Developed using Python, Flask & Deep Learning</p>
+</footer>
+
+</body>
+</html>

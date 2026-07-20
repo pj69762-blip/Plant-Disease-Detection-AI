@@ -1,0 +1,15 @@
+venv/
+__pycache__/
+*.pyc
+predictions.db
+
+!static/uploads/.gitkeep
+
+.env
+
+.idea/
+.vscode/
+
+.DS_Store
+model.h5
+models/plant_disease_model.keras

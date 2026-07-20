@@ -1,0 +1,817 @@
+body {
+    background: peach pink (196, 158, 158) !important;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../images/plant_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100vh;
+}
+
+
+.container {
+    width: 550px;
+    margin: 50px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+
+h1 {
+    color: #e016bb;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+
+input[type="file"] {
+    padding: 12px;
+    border: 2px dashed #535853;
+    border-radius: 10px;
+    width: 80%;
+}
+
+
+button {
+    margin-top: 15px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+img {
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+
+h2 {
+    color: #388e3c;
+}
+
+
+h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+
+p {
+    background: #e8f5e9;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+features p {
+    background: #e8f5e9;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+.result-card {
+    margin-top: 30px;
+    padding: 25px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+}
+
+
+.result-card h2 {
+    color: green;
+}
+
+
+.result-card p {
+    background: #f1f8e9;
+    padding: 12px;
+    border-radius: 10px;
+}
+.hero {
+
+    text-align:center;
+    padding:40px;
+    color:rgb(96, 103, 146);
+
+}
+
+
+.hero h1 {
+
+    font-size:40px;
+
+}
+
+
+.hero p {
+
+    font-size:20px;
+    width:70%;
+    margin:auto;
+
+}
+nav {
+
+    background:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+
+nav a {
+
+    text-decoration:none;
+    margin:10px;
+    color:rgb(213, 25, 172);
+    font-weight:bold;
+
+}
+section {
+
+    width:550px;
+    margin:30px auto;
+    background:rgb(43, 41, 41);
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.15);
+
+}
+
+
+.steps p,
+#technology p {
+
+    background:#c2d020;
+    padding:12px;
+    margin:10px;
+    border-radius:10px;
+
+}
+.disease-container {
+
+    width:600px;
+    margin:40px auto;
+    text-align:center;
+
+}
+
+
+.disease-card {
+
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0px 5px 20px rgba(52, 21, 21, 0.2);
+
+}
+
+
+.disease-card h2 {
+
+    color:rgb(123, 87, 186);
+
+}
+
+
+.disease-card p {
+
+    background:#9dc3a0;
+    padding:15px;
+    border-radius:10px;
+
+}
+#search {
+
+    width:80%;
+    padding:15px;
+    margin:20px;
+    border-radius:10px;
+    border:2px solid green;
+    font-size:16px;
+
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #2e7d32;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+/* ===========================
+   PROFESSIONAL UI - PART 1
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#d4fc79,#96e6a1);
+    min-height:100vh;
+    color:#222;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:rgba(255,255,255,.20);
+
+    backdrop-filter:blur(12px);
+
+    position:sticky;
+    top:0;
+
+    z-index:999;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.10);
+}
+
+nav h2{
+    color:#1b5e20;
+    font-size:30px;
+    font-weight:700;
+}
+
+nav div{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#222;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#2e7d32;
+}
+
+.hero{
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+.hero h1{
+
+    font-size:50px;
+
+    color:#1b5e20;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    color:#444;
+
+}
+/* ===========================
+   PROFESSIONAL UI - PART 2
+=========================== */
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+    padding:35px;
+
+    background:rgba(255,255,255,0.25);
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+
+    text-align:center;
+}
+
+.container h1{
+    color:#1b5e20;
+    margin-bottom:25px;
+}
+
+input[type="file"]{
+    width:100%;
+    max-width:420px;
+
+    padding:15px;
+
+    border:2px dashed #2e7d32;
+
+    border-radius:12px;
+
+    background:#ffffff;
+
+    cursor:pointer;
+
+    margin-bottom:20px;
+}
+
+button{
+    background:#2e7d32;
+
+    color:white;
+
+    border:none;
+
+    padding:14px 35px;
+
+    border-radius:10px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+
+    background:#1b5e20;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+
+}
+
+img{
+
+    width:320px;
+
+    max-width:100%;
+
+    margin-top:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+.result-card{
+
+    margin-top:35px;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    background:white;
+
+    text-align:left;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+.result-card h2{
+
+    text-align:center;
+
+    color:#2e7d32;
+
+    margin-bottom:20px;
+
+}
+
+.result-card h3{
+
+    color:#1b5e20;
+
+    margin-top:15px;
+
+}
+
+.result-card p{
+
+    color:#444;
+
+    line-height:1.7;
+
+}
+/* ===========================
+   PROFESSIONAL UI - PART 3
+=========================== */
+
+/* ---------- Tables ---------- */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:30px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+th{
+    background:#2e7d32;
+    color:white;
+    padding:16px;
+    font-size:17px;
+}
+
+td{
+    padding:14px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f3fff3;
+}
+
+/* ---------- Disease Cards ---------- */
+
+.disease-container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+.disease-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.disease-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+}
+
+.disease-card h2{
+
+    color:#2e7d32;
+
+    margin-bottom:15px;
+
+}
+
+.disease-card h3{
+
+    color:#1b5e20;
+
+    margin-top:15px;
+
+}
+
+.disease-card p{
+
+    line-height:1.7;
+
+    color:#444;
+
+}
+
+/* ---------- Search Box ---------- */
+
+#search{
+
+    width:100%;
+
+    padding:15px;
+
+    margin:25px 0;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+/* ---------- Analytics ---------- */
+
+canvas{
+
+    margin-top:30px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+/* ===========================
+   PROFESSIONAL UI - PART 4
+=========================== */
+
+/* Footer */
+
+footer{
+    margin-top:60px;
+    padding:25px;
+    text-align:center;
+    background:#1b5e20;
+    color:rgb(17, 157, 233);
+    font-size:16px;
+}
+
+/* Fade Animation */
+
+.container,
+.hero,
+.result-card,
+.disease-card,
+table,
+canvas{
+
+    animation:fadeIn .8s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Better Links */
+
+a{
+
+    transition:.3s;
+
+}
+
+a:hover{
+
+    opacity:.85;
+
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    nav{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        padding:20px;
+
+    }
+
+    nav div{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+    }
+
+    .hero h1{
+
+        font-size:34px;
+
+    }
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+    .container{
+
+        width:95%;
+        padding:20px;
+
+    }
+
+    img{
+
+        width:100%;
+
+    }
+
+    table{
+
+        display:block;
+        overflow-x:auto;
+
+    }
+
+}
+/* ===========================
+   LOADING SPINNER
+=========================== */
+
+#loader{
+
+    text-align:center;
+
+    margin-top:30px;
+
+}
+
+.spinner{
+
+    width:70px;
+
+    height:70px;
+
+    border:8px solid #ddd;
+
+    border-top:8px solid #2e7d32;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    100%{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+/* ===========================
+   DARK MODE
+=========================== */
+
+.dark-mode{
+    background:#121212 !important;
+    color:#1354bc !important;
+}
+
+.dark-mode nav{
+    background:#1f1f1f !important;
+}
+
+.dark-mode .container,
+.dark-mode .result-card,
+.dark-mode .disease-card,
+.dark-mode table,
+.dark-mode canvas{
+    background:#222 !important;
+    color:rgb(14, 211, 145) !important;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode td,
+.dark-mode th,
+.dark-mode a{
+    color:rgb(45, 15, 15) !important;
+}
+
+.dark-mode input{
+    background:#333;
+    color:rgb(121, 7, 64);
+    border:1px solid #555;
+}
+
+.dark-mode footer{
+    background:#000;
+}
+/* Dark Mode Text Fix */
+
+.dark-mode nav h2{
+    color:#2a4e06 !important;
+}
+
+.dark-mode .hero h1{
+    color:#a30031 !important;
+}
+
+.dark-mode .hero p{
+    color:#07a9e0 !important;
+}
+
+.dark-mode .container h1{
+    color:#7CFC00 !important;
+}
+
+.dark-mode .result-card h2,
+.dark-mode .result-card h3{
+    color:#7CFC00 !important;
+}
+
+.dark-mode .disease-card h2,
+.dark-mode .disease-card h3{
+    color:#7CFC00 !important;
+}
+
+.dark-mode p,
+.dark-mode td,
+.dark-mode th,
+.dark-mode label,
+.dark-mode span{
+    color:rgb(218, 5, 5) !important;
+}
+
+.dark-mode a{
+    color:rgb(219, 11, 11) !important;
+}
+
+.dark-mode button{
+    color:rgb(187, 10, 10) !important;
+}
